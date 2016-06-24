@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Demo</title>
+    <style>
+	div { position: absolute; background-color: green; width: 100px;height: 100px; color: white; text-align: center; line-height: 32px; }
+    </style>
+</head>
+<body>
+    <div id="salary" onMouseOver="move()">Toch to get salary increment</div>
+    <script type="text/javascript">
+	function move() {
+		var $salary = $salary || document.getElementById("salary");
+		$salary.style.left = parseInt(Math.random() * (screen.width - 200)) + "px";
+		$salary.style.top = parseInt(Math.random() * (screen.height - 200)) + "px";
+	}
+    </script>
+</body>
+</html>
